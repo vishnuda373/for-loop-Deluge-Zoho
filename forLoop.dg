@@ -1,0 +1,20 @@
+void testingForLoop(int count)
+{
+	// 	count = 5;
+	iterationString = "".leftPad(count);
+	info "iterationString = " + iterationString;
+	// 	stringLength = iterationString.length();
+	// 	info "stringLength = " + stringLength;
+	iterationString = iterationString.replaceAll(" ",",");
+	info "iterationString = " + iterationString;
+	iterationString = iterationString.subString(0,iterationString.length() - 1);
+	info "iterationString = " + iterationString;
+	listPads = iterationString.toList();
+	info "listPads = " + listPads;
+	i = 0;
+	for each  el in listPads
+	{
+		info i;
+		i = i + 1;
+	}
+}
